@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="mkliscenterDataSet1" targetNamespace="http://tempuri.org/mkliscenterDataSet1.xsd" xmlns:mstns="http://tempuri.org/mkliscenterDataSet1.xsd" xmlns="http://tempuri.org/mkliscenterDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="mkliscenterConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="mkliscenterConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.reportview.Properties.Settings.GlobalReference.Default.mkliscenterConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="lis_ybxxTableAdapter" GeneratorDataComponentClassName="lis_ybxxTableAdapter" Name="lis_ybxx" UserDataComponentName="lis_ybxxTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="mkliscenterConnectionString (Settings)" DbObjectName="mkliscenter.dbo.lis_ybxx" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT brxm, brxb, brnl, jymd FROM dbo.lis_ybxx</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="brxm" DataSetColumn="brxm" />
+              <Mapping SourceColumn="brxb" DataSetColumn="brxb" />
+              <Mapping SourceColumn="brnl" DataSetColumn="brnl" />
+              <Mapping SourceColumn="jymd" DataSetColumn="jymd" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="mkliscenterDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="mkliscenterDataSet1" msprop:Generator_UserDSName="mkliscenterDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="lis_ybxx" msprop:Generator_TableClassName="lis_ybxxDataTable" msprop:Generator_TableVarName="tablelis_ybxx" msprop:Generator_TablePropName="lis_ybxx" msprop:Generator_RowDeletingName="lis_ybxxRowDeleting" msprop:Generator_RowChangingName="lis_ybxxRowChanging" msprop:Generator_RowEvHandlerName="lis_ybxxRowChangeEventHandler" msprop:Generator_RowDeletedName="lis_ybxxRowDeleted" msprop:Generator_UserTableName="lis_ybxx" msprop:Generator_RowChangedName="lis_ybxxRowChanged" msprop:Generator_RowEvArgName="lis_ybxxRowChangeEvent" msprop:Generator_RowClassName="lis_ybxxRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="brxm" msprop:Generator_ColumnVarNameInTable="columnbrxm" msprop:Generator_ColumnPropNameInRow="brxm" msprop:Generator_ColumnPropNameInTable="brxmColumn" msprop:Generator_UserColumnName="brxm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="brxb" msprop:Generator_ColumnVarNameInTable="columnbrxb" msprop:Generator_ColumnPropNameInRow="brxb" msprop:Generator_ColumnPropNameInTable="brxbColumn" msprop:Generator_UserColumnName="brxb" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="brnl" msprop:Generator_ColumnVarNameInTable="columnbrnl" msprop:Generator_ColumnPropNameInRow="brnl" msprop:Generator_ColumnPropNameInTable="brnlColumn" msprop:Generator_UserColumnName="brnl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jymd" msprop:Generator_ColumnVarNameInTable="columnjymd" msprop:Generator_ColumnPropNameInRow="jymd" msprop:Generator_ColumnPropNameInTable="jymdColumn" msprop:Generator_UserColumnName="jymd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
